@@ -2,17 +2,17 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		
 	    {
-            "path" : "pages/home/home",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+        "path" : "pages/home/home",
+        "style" : 
+        {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+        }
             
         }
         ,{
             "path" : "pages/cate/cate",
-            "style" :                                                                                    
+            "style" :
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
@@ -21,22 +21,46 @@
         }
         ,{
             "path" : "pages/cart/cart",
-            "style" :                                                                                    
+            "style" : 
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
-            
         }
-        ,{
-            "path" : "pages/my/my",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+      ,{
+          "path" : "pages/my/my",
+          "style" : 
+          {
+              "navigationBarTitleText": "",
+              "enablePullDownRefresh": false
+          }
+          
+      }
+    ],
+    // 分包
+    "subPackages" :[
+      {
+        "root":"subpkg",
+        "pages":[{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+      }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

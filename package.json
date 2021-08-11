@@ -1,0 +1,23 @@
+{
+  "name": "uni-app-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FENGTIANQI-1/uni-app-mall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FENGTIANQI-1/uni-app-mall/issues"
+  },
+  "homepage": "https://github.com/FENGTIANQI-1/uni-app-mall#readme",
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1"
+  }
+}
