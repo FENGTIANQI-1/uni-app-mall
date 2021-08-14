@@ -1,5 +1,9 @@
 <template>
   <view>
+    <!-- 使用自定义的搜索组件 -->
+    <view class="search-box">
+      <my-search @mycli="gotoSearch"></my-search>
+    </view>
     <!-- 轮播图区域 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3500" :duration="1500" :circular="true">
       <!-- 循环渲染轮播图的 item 项 -->
@@ -85,6 +89,11 @@
           url: '/pages/cate/cate'
         })
      }
+   },
+   gotoSearch() {
+     uni.navigateTo({
+       url: '/subpkg/search/search'
+     })
    }
 }}
 </script>
@@ -122,5 +131,14 @@ swiper {
 .floor-img-box {
   display: flex;
   padding-left: 10rpx;
+}
+
+.search-box {
+  // 设置定位效果为“吸顶”
+  position: sticky;
+  // 吸顶的“位置”
+  top: 0;
+  // 提高层级，防止被轮播图覆盖
+  z-index: 999;
 }
 </style>
