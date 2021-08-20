@@ -13,7 +13,7 @@
           </view>
         
           <!-- 结算按钮 -->
-          <view class="btn-settle">结算{{checkedCount}}</view>
+          <view class="btn-settle" @click="gg">结算{{checkedCount}}</view>
       </view>
   </view>
 </template>
@@ -38,6 +38,9 @@
       ...mapMutations('m_cart', ['updateAllGoodsState']),
       changeAllState(){
         this.updateAllGoodsState(!this.isFullCheck)
+      },
+      gg(){
+        return uni.$showMsg('这个作者很懒，还没写好这个功能')
       }
     }
   }
